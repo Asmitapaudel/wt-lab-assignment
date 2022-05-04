@@ -76,22 +76,55 @@
     border-bottom-color:rgb(226, 125, 125) ;
 
 }
-.btn:disabled{
-    background-color: #b2e9bb;
-    border-bottom-color:#b2e9bb ;
+.btn1{
+    text-decoration:none;
+    color: rgba(255, 255, 255, 0.916);
+    padding: 5px 10px;
+    border:solid ; 
+    border-radius: 40px;
+    background-color: #c7efce;
+    margin:10px;
+    height: 20px;
+    width: 20px;
+
 }
-.btn-primary:disabled{
-    background-color: #b2e9bb;
-    border-bottom-color:#b2e9bb ;
+.btn-primary1{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.916);
+    padding: 10px;
+    border:solid ; 
+    border-radius:5px;
+    background-color: #c7efce;
+    padding:5px 10px;
+    margin: 10px;
 }
-.btn-secondary:disabled{
-    background-color: #f6f6f6;
-    border-color:#f6f6f6 ;
-    border-bottom-color:#f6f6f6;
+.btn-secondary1{
+    text-decoration: none;
+    color: rgb(191, 189, 189);
+    padding: 10px;
+    border:solid ; 
+    border-radius:5px;
+    border-width: 1px;
+    background-color:rgb(219, 216, 216);
+    padding:5px 10px;
+    margin: 10px;
 }
-.btn-Destructive:disabled{
-    background-color: rgb(240, 134, 134);
-    border-bottom-color:rgb(240, 134, 134) ;
+.btn-Destructive1{
+    text-decoration: none;
+    color:rgb(246, 240, 240);
+    padding: 10px;
+    border:solid ; 
+    border-radius:5px;
+    background-color:#f2ced0;
+    padding:5px 10px;
+    margin: 15px;
+}
+.btn1:disabled,
+.btn-primary1:disabled,
+.btn-secondary1:disabled,
+.btn-Destructive1:disabled{
+    cursor: not-allowed;
+    opacity: 0.4;
 
 }
 .btn-primary2{
@@ -158,15 +191,48 @@
     background-color:rgb(235, 92, 57);
     border-color: rgb(235, 92, 57);
 }
-.btn-primary2:disabled{
+.btn-primary3{
+    text-decoration: none;
+    color: #8ff5a0;
+    padding: 10px;
+    border:solid ; 
+    border-color: #81e491;
+    border-radius: 5px;
+    border-width:1px;
+    padding:5px 10px;
+    margin: 10px;
+}
+.btn-secondary3{
+    text-decoration: none;
+    color: rgb(210, 203, 203);
+    padding: 10px;
+    border:solid ; 
+    border-radius:5px;
+    border-width:1px;
+    border-color:rgb(200, 194, 194);
+    padding:5px 10px;
+    margin: 10px;
+}
+.btn-Destructive3{
+    text-decoration: none;
+    color:#f29a9c;
+    padding: 10px;
+    border:solid ; 
+    border-radius:5px;
+    border-width:1px;
+    border-color:#f29a9c;
+    padding:5px 10px;
+    margin: 15px;
+}
+.btn-primary3:disabled{
     color: #51e66a;
     border-color:#6cee82 ;
 }
-.btn-secondary2:disabled{
+.btn-secondary3:disabled{
     color: rgb(190, 184, 184);
     border-color:rgb(169, 165, 165) ;   
 }
-.btn-Destructive2:disabled{
+.btn-Destructive3:disabled{
     color:#fa6568 ;
     border-color:#ea585a ;
 

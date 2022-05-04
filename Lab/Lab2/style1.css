@@ -1,0 +1,122 @@
+.dotted{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:dotted; 
+    border-radius: 1px;
+    border-color: black;
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.dashed{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:dashed; 
+    border-color: black;
+    border-radius: 1px;
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.solid{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:solid; 
+    border-radius: 1px;
+    border-color: black;
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.double{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:double; 
+    border-radius: 1px;
+    border-color: black;
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.groove{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:groove; 
+    border-radius: 1px;
+    border-left-color: rgb(93, 90, 90);
+    border-bottom-color: rgb(93, 90, 90);
+    border-right-color: rgb(23, 22, 22);
+    border-top-color: rgb(23, 22, 22);
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.rigde{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:ridge; 
+    border-radius: 1px;
+    border-right-color: rgb(93, 90, 90);
+    border-top-color: rgb(93, 90, 90);
+    border-left-color: rgb(23, 22, 22);
+    border-bottom-color: rgb(23, 22, 22);  
+      margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.inset{
+    text-decoration:none;
+    padding: 10px 10px;
+    border:inset; 
+    color: black;
+    border-radius: 1px;
+    border-right-color: rgb(156, 147, 147);
+    border-bottom-color: rgb(156, 147, 147);
+    border-left-color: rgb(23, 22, 22);
+    border-top-color: rgb(23, 22, 22);   
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.outset{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:outset; 
+    border-radius: 1px;
+    border-left-color: rgb(93, 90, 90);
+    border-top-color: rgb(93, 90, 90);
+    border-right-color: rgb(23, 22, 22);
+    border-bottom-color: rgb(23, 22, 22);
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.none{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:none; 
+    border-radius: 1px;
+    border-color: black;
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
+.hidden{
+    text-decoration:none;
+    padding: 10px 10px;
+    color: black;
+    border:hidden; 
+    border-radius: 1px;
+    border-color: black;
+    margin:auto;
+    height: 20px;
+    width: 60px;
+}
