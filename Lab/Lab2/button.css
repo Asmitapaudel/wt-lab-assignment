@@ -227,13 +227,18 @@
 .btn-primary3:disabled{
     color: #51e66a;
     border-color:#6cee82 ;
+    cursor :not-allowed;
 }
 .btn-secondary3:disabled{
     color: rgb(190, 184, 184);
-    border-color:rgb(169, 165, 165) ;   
+    border-color:rgb(169, 165, 165) ; 
+    cursor :not-allowed;
+  
 }
 .btn-Destructive3:disabled{
     color:#fa6568 ;
     border-color:#ea585a ;
+    cursor :not-allowed;
+
 
 }
