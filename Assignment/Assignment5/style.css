@@ -1,0 +1,81 @@
+
+.navbar{
+    background-color: black;
+    border-radius: 15px;
+    margin-top: -15px;
+    margin: -5px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 10px 15px;
+    margin-left: 0px
+}
+.navbar li a{
+    color: white;
+    padding: 3px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: hsl(74, 31%, 86%);
+    box-shadow:hsl(200, 9%, 67%) ;
+    color: hsl(354, 67%, 60%);
+}
+.search{
+    float: right;
+    color: aliceblue;
+    padding: 3px 10px 3px 2px;
+    margin-top: 5px;
+}
+.navbar input{
+    border: solid 1px rgb(164, 157, 157);
+    border-radius: 5px;
+    padding: 3px;
+}
+ul li.active a{
+    background-color: hsl(74, 31%, 86%);
+    box-shadow:hsl(200, 9%, 67%) ;
+    color: hsl(354, 75%, 65%); 
+}
+body{
+    background-image: url(../Assignment5/bg.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+main{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: min-content;
+    height: min-content;
+}
+.picture img{
+    border: 1px solid rgb(116, 69, 197);
+    border-radius: 50%;
+    height:150px ;
+    width:150px ;
+}
+.network img{
+    border: solid 1px saddlebrown;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.network img:hover{
+    color: bisque;
+    box-shadow: 1px 1px 1px 1px sienna;
+}
