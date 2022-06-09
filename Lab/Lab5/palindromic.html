@@ -1,0 +1,31 @@
+<!-- Write a function to check if the provided number is palindromic or not. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const String= prompt('Enter any string');
+         let rev="";
+         for(let i=String.length-1; i>=0;i--){
+             console.log(String[i]);
+             rev= rev+String[i];
+         } 
+         function palidrom(){
+         if(rev==String){
+             console.log("Given string is palidrom");
+             alert("Given string is palidrom");
+         }
+         else{
+            console.log("Given string is not palidrom");
+            alert("Given string is not palidrom");
+         }
+       }
+       palidrom();
+     </script>
+</body>
+</html>
