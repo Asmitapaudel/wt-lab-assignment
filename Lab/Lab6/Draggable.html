@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag&Drop</title>
+</head>
+<style>
+    /* *{
+        font-family: sans-serif;
+        font-weight: 200px;
+        font-size: 20px;
+    } */
+    .box {
+
+        width: 200px;
+        height: 60px;
+        background-color: rgb(221, 76, 76);
+    }
+
+    div{
+        background-color: antiquewhite;
+        border: 1px solid rgb(137, 115, 137);
+    }
+    #box1{
+        position: absolute;
+        cursor:se-resize;
+    }
+</style>
+<body onload="move('box1')">
+    <div class="box" id="box1"><p></p></div>
+    <script>
+        let dragValue;
+        function move(id) {
+            let element1 = document.getElementById("box1");
+            element1.style.position = "absolute";
+            element1.onmousedown = function () {
+                dragValue = element1;
+            }
+        }
+        document.onmouseup = function (e) {
+            dragValue = null;
+        }
+        document.onmousemove = function (e) {
+            let x = e.pageX;
+            let y = e.pageY;
+            // dragValue.style.top = y + "px";
+            // dragValue.style.left= x + "px";
+            dragValue.style.height = y + "px";
+            dragValue.style.width= x + "px";
+        }
+    </script>
+
+</body>
+
+</html>

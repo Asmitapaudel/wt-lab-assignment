@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Create a sortable list</title>
+    <style type="text/css">
+        .container{
+            border:solid 1px #dededd;
+            background-color: black;
+            padding: 35px ;
+            width: 300px;
+            height: 300px;
+        }
+           .draggable{
+            border:solid 1px #dededd;
+            height: 35px;
+            cursor: move;
+            background-color: #f6f6f5;
+            width: 250px;
+            padding-left:10px;
+            margin-bottom:3px ;
+            color: #50504f;
+        }
+        .sortimg{
+            height: 10px;
+            width: 5px;
+            margin-right: 1em;
+             float: left;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="draggable" draggable="true">
+            <img src="./asset/drag-arrow.png" alt="" class="sortimg ">
+            item1</div>
+        <div  class="draggable" draggable="true">
+            <img src="./asset/drag-arrow.png" alt="" class="sortimg ">
+            item2</div>
+        <div  class="draggable" draggable="true">
+            <img src="./asset/drag-arrow.png" alt="" class="sortimg ">
+            item3</div>
+        <div  class="draggable" draggable="true">
+            <img src="./asset/drag-arrow.png" alt="" class="sortimg ">
+            item4</div>
+        <div  class="draggable" draggable="true">
+            <img src="./asset/drag-arrow.png" alt="" class="sortimg ">
+            item5</div>
+        <div  class="draggable" draggable="true">
+            <img src="./asset/drag-arrow.png" alt="" class="sortimg ">
+            item6</div>
+        <div class="draggable" draggable="true" >
+            <img src="./asset/drag-arrow.png" alt="" class="sortimg ">
+            item7</div>
+    </div>
+    <script type="text/javascript">
+       const draggables = document.querySelectorAll('.draggable')
+        const containers = document.querySelectorAll('.container')
+        
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', () => {
+                draggable.classList.add('dragging')
+            })
+        
+            draggable.addEventListener('dragend', () => {
+                draggable.classList.remove('dragging')
+            })
+        })
+        
+        containers.forEach(container => {
+            container.addEventListener('dragover', e => {
+                e.preventDefault()
+                const afterElement = getDragAfterElement(container, e.clientY)
+                const dragitem = document.querySelector('.dragging')
+                if (afterElement == null) {
+                    container.appendChild(dragitem)
+                } else {
+                    container.insertBefore(dragitem, afterElement)
+                }
+            })
+        })
+        
+        function getDragAfterElement(container, y) {
+            const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
+            
+            return draggableElements.reduce((closest, child) => {
+                const box = child.getBoundingClientRect()
+                const offset = y - box.top - box.height / 2
+                if (offset < 0 && offset > closest.offset) {
+                    return { offset: offset, element: child }
+                } else {
+                    return closest
+                }
+            }, { offset: Number.NEGATIVE_INFINITY }).element
+        }
+
+        </script>
+</body>
+</html>
